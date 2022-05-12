@@ -76,10 +76,10 @@ vh heigth
 vw width
 
 text property
-font-size:
-font-family:
-line-height:
-font-weight:
+font-size:      tamaño de la letra
+font-family:    tipografia
+line-height:    tamño que ocupa la letra
+font-weight:    grosor
 
 /* comentario */
 
@@ -88,16 +88,21 @@ font-weight:
 {display:block }
 
 box property
-background: color del fondo
-color:color del elemento
-padding: left top right bottom de la caja al texto
-marginleft top right bottom del margen a la caja
-box-sizing:border-box mantiene el tamaño de la caja
-text-aling: alineacion del texto 
-border-radius:numero%
-border: tamaño stilo color
-box-shadow: mueve X mueve Y desenfoque tamaño del borde color
-text-shadow: mueve X mueve Y desenfoque color
+background:     color del fondo
+color:          color del elemento
+padding:        left top right bottom de la caja al texto
+margin:         left top right bottom del margen a la caja
+box-sizing:     border-box mantiene el tamaño de la caja
+text-aling:     alineacion del texto 
+border-radius:  numero%
+border:         tamaño stilo color
+box-shadow:     mueve X mueve Y desenfoque tamaño del borde color
+text-shadow:    mueve X mueve Y desenfoque color
+transform:      rotate (numero + deg)
+outline:        no ocupa espacio
+position:       relative: mantiene el espacio pero la caja se mueve 
+                absolut:
+
 orden de gerarquia
 line-height:
 padding:
