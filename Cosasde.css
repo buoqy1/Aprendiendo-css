@@ -82,3 +82,14 @@ line-height:
 font-weight:
 
 /* comentario */
+
+{display:inline }
+{display:inline-block }
+{display:block }
+
+box property
+background: color del fondo
+color:color del elemento
+padding: left top right bottom de la caja al texto
+marginleft top right bottom del margen a la caja
+box-sizing:border-box mantiene el tamaño de la caja
