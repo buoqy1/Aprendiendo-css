@@ -83,9 +83,9 @@ font-weight:    grosor
 
 /* comentario */
 
-{display:inline }
-{display:inline-block }
-{display:block }
+{display:inline } /* no ocupa un lugar determinado */
+{display:inline-block }/* no ocupa toda la casilla completa */
+{display:block }/* ocupa todo el ancho de la pagina */
 
 box property
 background:     color del fondo
@@ -100,8 +100,8 @@ box-shadow:     mueve X mueve Y desenfoque tamaño del borde color
 text-shadow:    mueve X mueve Y desenfoque color
 transform:      rotate (numero + deg)
 outline:        no ocupa espacio
-position:       relative: mantiene el espacio pero la caja se mueve 
-                absolut:
+position:       relative:       mantiene el espacio pero la caja se mueve 
+                absolut:        
 
 orden de gerarquia
 line-height:
