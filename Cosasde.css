@@ -1,0 +1,84 @@
+Types of selects
+*{
+    select all
+}
+name of element
+h1{
+    all the h1
+}
+p{
+    all the p
+}
+class: name of the class
+.container{
+
+}
+.container-nav{
+
+}
+.container-nav__2{
+
+}
+ID
+#nameofelement
+attribute
+[name1:"name2"]{
+
+}
+[caja:"relleno"]{
+
+}
+descendant
+h1 p{
+
+}
+.container-nav p{
+
+}
+#nameofelement h1 p{
+
+}
+pseudoclass
+h1:pseudoclass{
+
+}
+
+
+specificity:
+
+!important
+line style 
+ID
+class
+pseudoclass
+attribute
+element
+pseudoelement
+
+
+methodology
+class:"contact-form"
+class:"contact-form__input"
+.contact-form{
+
+}
+.contact-form__input{
+
+}
+unit
+font-size:
+px
+cm
+mm
+pt 
+em
+vh heigth
+vw width
+
+text property
+font-size:
+font-family:
+line-height:
+font-weight:
+
+/* comentario */
