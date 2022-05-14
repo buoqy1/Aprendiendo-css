@@ -84,7 +84,7 @@ font-weight:    grosor
 /* comentario */
 
 {display:inline } /* no ocupa un lugar determinado */
-{display:inline-block }/* no ocupa toda la casilla completa */
+{display:inline-block }/* no ocupa toda la casilla completa se modifican las dimenciones */
 {display:block }/* ocupa todo el ancho de la pagina */
 
 box property
@@ -96,15 +96,58 @@ box-sizing:     border-box mantiene el tamaño de la caja
 text-aling:     alineacion del texto 
 border-radius:  numero%
 border:         tamaño stilo color
-box-shadow:     mueve X mueve Y desenfoque tamaño del borde color
-text-shadow:    mueve X mueve Y desenfoque color
+box-shadow:     mueve Y mueve X desenfoque tamaño del borde color
+text-shadow:    mueve Y mueve X desenfoque color
 transform:      rotate (numero + deg)
 outline:        no ocupa espacio
 position:       relative:       mantiene el espacio pero la caja se mueve 
-                absolut:        
+                absolut:        no reserva el espacio, desaparece  y se ajusta al contenido   toma de referencia al contenedor o el viewport
+                                al contenedor si esta posicionado
+                fixed:          Se mantiene fijo en ela pantalla
+                sticki:         a partir de un punto se mantiene fijado     
+z-index: posiciona en eje Z
 
 orden de gerarquia
 line-height:
 padding:
 border:
 margin:
+
+
+overflow: barra lateral para deslizar
+overflow X,Y
+auto
+hidden
+scroll
+
+float
+se utilaza para moverla de un lado a otro  
+/*  no se usa mucho hoy en dia*/
+
+pseudo elemento no funciona en inline 
+::first-line        se refiere a la primera linea del texto
+::first-letter      se refiere a la primera letra del texto
+::placeholder       edita el placeholder
+::selection         edita el color cuando seleccionas algo con el mouse
+no pertenencen al dom porque se utiliza con content
+::after         va dsp del texto y no se puede seleccionar
+::before        va antes del texto y no se puede seleccionar
+
+pseudo clases
+:hover      cuando el mouse pase por encima
+:link       para cuando el link no esta visto
+:visited    para cuando el link ya fue visitado
+:active     cuadno se apriete el elemento
+:focus      cuadno esta el elemnto en foco cuando esta aseleccionado
+:lang()     cambia el lenguaje  y se le tiene que dar la propiedad lang="..."
+
+object fit
+fil
+cover       se ajusta a al contenedor
+contain     se ajusta a las resoluciones reales ajustandose al contenedor
+none        pone la imagen con el tamaño por defecto
+scale-down  usa la resolucion mas baja 
+
+object-position se muestra mas  del lado elejido
+
+cursor cambia la forma del cursor
