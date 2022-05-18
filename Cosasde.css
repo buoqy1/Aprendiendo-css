@@ -1,0 +1,183 @@
+Types of selects
+*{
+    select all
+}
+name of element
+h1{
+    all the h1
+}
+p{
+    all the p
+}
+class: name of the class
+.container{
+
+}
+.container-nav{
+
+}
+.container-nav__2{
+
+}
+ID
+#nameofelement
+attribute
+[name1:"name2"]{
+
+}
+[caja:"relleno"]{
+
+}
+descendant
+h1 p{
+
+}
+.container-nav p{
+
+}
+#nameofelement h1 p{
+
+}
+pseudoclass
+h1:pseudoclass{
+
+}
+
+
+specificity:
+
+!important
+line style 
+ID
+class
+pseudoclass
+attribute
+element
+pseudoelement
+
+
+methodology
+class:"contact-form"
+class:"contact-form__input"
+.contact-form{
+
+}
+.contact-form__input{
+
+}
+unit
+font-size:
+px
+cm
+mm
+pt 
+em
+vh heigth
+vw width
+
+text property
+font-size:      tamaño de la letra
+font-family:    tipografia
+line-height:    tamño que ocupa la letra
+font-weight:    grosor
+
+/* comentario */
+
+{display:inline } /* no ocupa un lugar determinado */
+{display:inline-block }/* no ocupa toda la casilla completa se modifican las dimenciones */
+{display:block }/* ocupa todo el ancho de la pagina */
+
+box property
+background:     color del fondo
+color:          color del elemento
+padding:        left top right bottom de la caja al texto
+margin:         left top right bottom del margen a la caja
+box-sizing:     border-box mantiene el tamaño de la caja
+text-aling:     alineacion del texto 
+border-radius:  numero%
+border:         tamaño stilo color
+box-shadow:     mueve Y mueve X desenfoque tamaño del borde color
+text-shadow:    mueve Y mueve X desenfoque color
+transform:      rotate (numero + deg)
+outline:        no ocupa espacio
+position:       relative:       mantiene el espacio pero la caja se mueve 
+                absolut:        no reserva el espacio, desaparece  y se ajusta al contenido   toma de referencia al contenedor o el viewport
+                                al contenedor si esta posicionado
+                fixed:          Se mantiene fijo en ela pantalla
+                sticki:         a partir de un punto se mantiene fijado     
+z-index: posiciona en eje Z
+
+orden de gerarquia
+line-height:
+padding:
+border:
+margin:
+
+
+overflow: barra lateral para deslizar
+overflow X,Y
+auto
+hidden
+scroll
+
+float
+se utilaza para moverla de un lado a otro  
+/*  no se usa mucho hoy en dia*/
+
+pseudo elemento no funciona en inline 
+::first-line        se refiere a la primera linea del texto
+::first-letter      se refiere a la primera letra del texto
+::placeholder       edita el placeholder
+::selection         edita el color cuando seleccionas algo con el mouse
+/*no pertenencen al dom porque se utiliza con content*/
+::after         va dsp del texto y no se puede seleccionar
+::before        va antes del texto y no se puede seleccionar
+
+pseudo clases
+:hover      cuando el mouse pase por encima
+:link       para cuando el link no esta visto
+:visited    para cuando el link ya fue visitado
+:active     cuadno se apriete el elemento
+:focus      cuadno esta el elemnto en foco cuando esta aseleccionado
+:lang()     cambia el lenguaje  y se le tiene que dar la propiedad lang="..."
+
+object fit
+fil
+cover       se ajusta a al contenedor
+contain     se ajusta a las resoluciones reales ajustandose al contenedor
+none        pone la imagen con el tamaño por defecto
+scale-down  usa la resolucion mas baja 
+
+object-position se muestra mas  del lado elejido
+
+cursor cambia la forma del cursor
+
+responsive desing : mobile first
+
+@media only screen and (max-widht: 800px) 
+va con el meta viewport
+
+{display:flex} se comporta como un block lo que cambia es el contenido de la caja
+/* se pone en el container pero afecta al contenido */
+flex-direction: row:    valor por defecto
+                column: se comportan como columna 
+                row-reverse:    cambia la direccion en eje X
+                column-reverse: cambia la direccion en eje Y 
+
+flex-wrap:      wrap:  tira las cajas hacia abajo
+                wrap-reverse:   tira las cajas hacia arriba
+                no-wrap:    no hace nada no lo tira hacia ningun aseleccionado
+
+justify-content:    center:         centra el contenido
+                    space-around:   le da un margin automatico a las cajas
+                    space-betwen:   deja el mayor espcaio entre cajas   
+                    space-evenly:   margin especifico para que cada caja tenga el mismo margin
+
+/* alinea en el cross axis  */
+/* aling-item se usa si solo hay una linea 
+   aling-conten se usa si hay mas de una linea  */
+aling-item:     center:     centra en el eje ya
+                felx-end:   lo pone en el final
+                flex-strat: se ajusta al contenido
+                stretch:    se estira en todo el cross axis
+                balenine:   
